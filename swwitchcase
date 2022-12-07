@@ -1,0 +1,38 @@
+#include <stdio.h>
+main()
+{ int order=0;
+
+    printf("pick an item : \n1.Pizza \n2.Burger\n3.Pasta\n4.French Fries \n5.Sandwich");
+    //int order=0;
+    do{
+    scanf("%d",&order);
+    
+    switch(order)
+    {
+        case 1:
+        printf("Food item-Pizza \n");
+        printf("price-Rs239");
+        break;
+        case 2:
+        printf("Food item-Burger \n");
+        printf("price-Rs129");
+        break;
+        case 3:
+        printf("Food item-Pasta \n");
+        printf("price-Rs179");
+        break;
+        case 4:
+        printf("Food item-French Fries \n");
+        printf("price-Rs99");
+        break;
+        case 5:
+        printf("Food item-Sandwich \n");
+        printf("price-Rs`149");
+        break;
+        case 6:
+        printf("No order needed\n");
+        break;
+        default : printf("change the order");
+    }
+    }while(order < 6);
+}
